@@ -1,4 +1,12 @@
-## insuhkim's dotfile repository with CHEZMOI
+insuhkim's dotfile repository with CHEZMOI
+===========
 
 
-followed [chezmoi]https://www.chezmoi.io/quick-start/
+
+uses [chezmoi](https://www.chezmoi.io/quick-start/)
+
+
+```bash
+chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git
+```
+
