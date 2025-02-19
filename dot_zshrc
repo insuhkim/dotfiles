@@ -86,4 +86,5 @@ alias diff='diff -u --color=always'
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-export $EDITOR=nvim
+export EDITOR=nvim
+export VISUAL=nvim
