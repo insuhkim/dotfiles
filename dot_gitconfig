@@ -1,3 +1,7 @@
 [user]
 	email = insuhkim@naver.com
 	name = insuhkim
+[format]
+	pretty = oneline
+[color]
+	ui = true
