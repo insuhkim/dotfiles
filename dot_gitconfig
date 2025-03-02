@@ -5,3 +5,5 @@
 	pretty = oneline
 [color]
 	ui = true
+[init]
+	defaultbranch = main
