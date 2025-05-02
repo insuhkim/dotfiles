@@ -28,6 +28,7 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
 # # vim mode
+bindkey -v
 # zinit ice depth=1
 # zinit light jeffreytse/zsh-vi-mode
 
@@ -74,9 +75,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
-alias ls='lsd'
-alias vim='nvim'
-alias c='clear'
+alias ls='eza --icons'
 alias diff='diff -u --color=always'
 
 # Shell integrations
@@ -85,3 +84,19 @@ eval "$(zoxide init --cmd cd zsh)"
 
 export EDITOR=nvim
 export VISUAL=nvim
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/home/insuhkim/.opam/opam-init/init.zsh' ]] || source '/home/insuhkim/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
+
+
+
+# if [[ -z "$TMUX" ]] && [[ "$TERM" != "linux" ]]; then
+#     exec tmux
+# fi
+
