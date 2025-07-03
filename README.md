@@ -3,7 +3,7 @@ insuhkim's dotfile repository with CHEZMOI
 
 
 
-uses [chezmoi](https://www.chezmoi.io/quick-start/)
+It uses [chezmoi](https://www.chezmoi.io/quick-start/)
 
 
 ```bash
